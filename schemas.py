@@ -3,8 +3,7 @@ from typing import List
 
 # Schema for the task creation request body
 class TaskBase(BaseModel):
-    job_id: str
-    environment_id: str
+    job_environment_id: str
     
 # Schema for lookup data
 class LookUpData(BaseModel):
