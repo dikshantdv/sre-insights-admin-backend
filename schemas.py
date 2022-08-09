@@ -13,6 +13,7 @@ class TaskBase(BaseModel):
 class LookUpData(BaseModel):
     jobs: List
     tasks: List
+    detail:str
 
 # Schema for environment list data
 
@@ -26,3 +27,4 @@ class EnvironmentListData(BaseModel):
 class TaskData(BaseModel):
     currentTask: List
     tasks: List
+    detail:str

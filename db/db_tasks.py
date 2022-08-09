@@ -21,7 +21,7 @@ def get_all_tasks(db: Session):
         "label": data["name"],
         "key": data['job_id']
     } for data in jobs]
-    return {"jobs": jobs, "tasks": tasks}
+    return {"detail":"Data fetched successfully","jobs": jobs, "tasks": tasks}
 
 # Function to get all environments for a job
 def get_environment_list(db: Session, request: str):
@@ -58,4 +58,4 @@ def create_task(db: Session, request: TaskBase):
             status_code=409, detail='Database refused to connect')
     if not current_task:
         raise HTTPException(status_code=400, detail='Task creation failed')
-    return {"currentTask": current_task, "tasks": tasks}
+    return {"detail":"Task created successfully" ,"currentTask": current_task, "tasks": tasks}
