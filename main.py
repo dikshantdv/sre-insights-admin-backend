@@ -8,7 +8,7 @@ from config.exceptions import UUIDException
 app = FastAPI()
 
 # Add CORS middleware
-origins = ['http://localhost:13000', 'http://127.0.0.1:13000']
+origins = ['http://app.sre-admin.sreinsights.com']
 app.add_middleware(CORSMiddleware,
                    allow_origins=origins,
                    allow_credentials=True,
@@ -25,7 +25,7 @@ app.include_router(tasks_post.router)
 @app.get("/")
 def read_info():
     return {
-        "version":"1.3.0",
+        "version":"1.4.0",
         "port":"18000",
         "health":"green",
         "name":"sre-intern-sre-insights-admin-backend"
