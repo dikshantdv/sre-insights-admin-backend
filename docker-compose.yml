@@ -1,9 +1,9 @@
-version: "3.9"
+version: "3.3"
 services:
   sre-insights-admin-backend:
     build: .
     container_name: sre-insights-admin-backend
-    image: sre-insights-admin-backend:1.0
+    image: sre-insights-admin-backend:4.1.0
     restart: unless-stopped
     ports:
       - "18000:18000"
