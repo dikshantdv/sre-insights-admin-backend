@@ -4,7 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Creating Database Engine
-engine = create_engine(os.environ['DATABASE_URL']
+engine = create_engine("postgresql://sreintern:TxSyHPDoaw44396z@34.135.5.178/sreinsights_dcl"
+    # os.environ['DATABASE_URL']
 ,echo=True
 )
 
