@@ -1,1 +1,1 @@
-sre-insights-admin-backend:4.1.0
+sre-insights-admin-backend:1.1.0

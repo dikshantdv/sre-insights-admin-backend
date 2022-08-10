@@ -25,7 +25,7 @@ app.include_router(tasks_post.router)
 @app.get("/")
 def read_info():
     return {
-        "version":"4.0.0",
+        "version":"1.1.0",
         "port":"18000",
         "health":"green",
         "name":"sre-intern-sre-insights-admin-backend"
