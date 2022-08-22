@@ -3,7 +3,7 @@ services:
   sre-insights-admin-backend:
     build: .
     container_name: sre-insights-admin-backend
-    image: sre-insights-admin-backend:1.5.0
+    image: sre-insights-admin-backend:1.6.0
     restart: unless-stopped
     ports:
       - "18000:18000"

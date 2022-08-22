@@ -44,7 +44,7 @@ app.include_router(tasks_post.router)
 @app.get("/",tags=["Health check"])
 def read_info():
     return {
-        "version":"1.5.0",
+        "version":"1.6.0",
         "port":"18000",
         "health":"green",
         "name":"sre-intern-sre-insights-admin-backend"
